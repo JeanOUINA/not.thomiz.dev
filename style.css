@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.avatar > img {
+    max-width: 200px;
+    border-radius: 50%;
+    width: calc(100vw - 20px);
+}
+
+.container {
+    width: 100vw;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+.container > .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: opacity 500ms;
+}
+
+.container > .line:has(.avatar) {
+    justify-content: center;
+}
+
+.container > .line > .word {
+    display: flex
+}
+.container > .line > .word > .letter {
+    display: inline-block;
+    transition: transform 800ms;
+}
+
+.container:has(.line:hover) > .line:not(.line:hover) {
+    opacity: 0.2;
+}
+
+.link {
+    text-decoration: none;
+    color: white
+}
+.margin {
+    height: 30px
+}
+
+.line > .avatar {
+    transition: transform 800ms;
+}
+.line:hover > .avatar {
+    transform: scale(1.05, 1.05);
+}
+
+/** shifted letters */
+.line:hover > .word > .letter:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+.line:hover > .word > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+.line:hover > .word > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+.line:hover > .word > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+.line:hover > .word > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+.line:hover > .word > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+.line:hover > .word > .letter:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+.line:hover > .word > .letter:nth-child(8) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+.line:hover > .word > .letter:nth-child(9) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+.line:hover > .word > .letter:nth-child(10) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+.line:hover > .word > .letter:nth-child(11) {
+    transform: translate(50%, -10%) rotate(-3deg);
+}
+.line:hover > .word > .letter:nth-child(12) {
+    transform: translate(120%, -30%) rotate(-10deg);
+}
