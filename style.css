@@ -100,5 +100,8 @@ body {
     transform: translate(50%, -10%) rotate(-3deg);
 }
 .line:hover > .word > .letter:nth-child(12) {
-    transform: translate(120%, -30%) rotate(-10deg);
+    transform: translate(60%, -30%) rotate(-10deg);
+}
+.line:hover > .word > .letter:nth-child(13) {
+    transform: translate(85%, 0%) rotate(-5deg);
 }
